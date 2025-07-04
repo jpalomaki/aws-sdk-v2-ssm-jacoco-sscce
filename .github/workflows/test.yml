@@ -12,4 +12,4 @@ jobs:
         with:
           java-version: '21'
           distribution: 'corretto'
-      - run: mvn clean test
+      - run: mvn -B -ntp clean test
