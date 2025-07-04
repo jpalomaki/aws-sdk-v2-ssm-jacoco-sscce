@@ -6,10 +6,10 @@ on:
 jobs:
   this:
     runs-on: ubuntu-24.04
-      steps:
-        - uses: actions/checkout@v4
-        - uses: actions/setup-java@v4
-          with:
-            java-version: '21'
-            distribution: 'corretto'
-        - run: mvn clean test
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          java-version: '21'
+          distribution: 'corretto'
+      - run: mvn clean test
